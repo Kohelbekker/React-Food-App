@@ -3,10 +3,10 @@ import MealItemForm from './MealItemForm';
 import CartContext from '../../../store/cart-context';
 import classes from './MealItem.module.css';
 
-const MealItem = props => {
+const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const addCart = amount => {
+  const addCart = (amount) => {
     cartCtx.addItem({
       id: props.id,
       name: props.name,
